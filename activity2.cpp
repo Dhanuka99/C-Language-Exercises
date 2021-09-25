@@ -2,7 +2,7 @@
 
 int main(){
 	
-		int number1,number2,total=0;
+	int number1,number2,total=0;
 	float avg=0.0;
 	printf("enter number 1 :");
 	scanf("%d",&number1);

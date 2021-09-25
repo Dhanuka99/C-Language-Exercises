@@ -17,13 +17,8 @@ int main(){
 	item2.price = 15.00;
 	item2.qty = 4;
 	
-	printf("item1 no is %d\n",item1.itemNo);
-	printf("item1 price is %.2f\n",item1.price);
-	printf("item1 qty is %d\n",item1.qty);
-	printf("\n");
-	printf("item2 no is %d\n",item2.itemNo);
-	printf("item2 price is %.2f\n",item2.price);
-	printf("item2 qty is %d\n",item2.qty);
-	
+	printf(" itemNo\t\tprice\t\tqty\n");
+	printf(" %d\t\t%.2f\t\t%d\n",item1.itemNo,item1.price,item1.qty);
+	printf(" %d\t\t%.2f\t\t%d",item2.itemNo,item2.price,item2.qty);
 	return 0;
 }
