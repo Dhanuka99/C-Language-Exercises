@@ -12,5 +12,6 @@ if(a++>0)
 		printf("else");
 else
 	printf("else")
+
 return 0;
 }
