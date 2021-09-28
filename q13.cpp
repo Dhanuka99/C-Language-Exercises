@@ -12,7 +12,7 @@ int main(){
 		printf("largest number is %d",number1);
 	else
 		printf("largest number is %d",number2);
-//	(number1==number2) ? printf("numbers are same") : printf("numbers are not same");
+
 	
 	return 0;
 }
