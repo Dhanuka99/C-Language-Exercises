@@ -3,6 +3,8 @@
 int main(){
 	
 	char trType;
+	float bankBalance;
+	
 	printf("Select the Transaction Type(Withdrawal-w/Deposit-d) :");
 	trType = getchar();
 	
@@ -12,6 +14,7 @@ int main(){
 		printf("You have selected to deposit money\n");
 	else
 		printf("You have selected an invalid transaction type\n");
+	
 	
 	return 0;
 }

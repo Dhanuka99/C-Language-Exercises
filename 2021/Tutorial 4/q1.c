@@ -6,10 +6,13 @@ int main(){
 	printf("Enter Value : ");
 	scanf("%d",&number);
 	
-	if(number<0)
+	if(number<0){
 		tp = number*-1;
 		printf("%d",tp);
-	
+	}else{
+		printf("%d",number);
+	}
+		
 	
 	return 0;
 }
