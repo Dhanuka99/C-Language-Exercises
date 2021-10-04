@@ -14,7 +14,7 @@ int main(){
 			printf("silver winner");
 			break;
 		case 'C' :
-			printf("Brovnce winner");
+			printf("Bronze winner");
 			break;
 		default :
 			printf("Invalid grade..");
