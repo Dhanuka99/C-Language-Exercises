@@ -23,7 +23,7 @@ int main(){
 			printf("Subctraction is : %d",cal);
 	}else if(op=='/'){
 		cal = num1/num2;
-		printf("Devision is : %d",cal);
+		printf("Division is : %d",cal);
 	}else if(op=='*'){
 		cal = num1*num2;
 		printf("Multiplication is : %d",cal);

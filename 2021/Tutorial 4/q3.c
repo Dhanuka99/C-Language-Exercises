@@ -3,22 +3,24 @@
 int main(){
 	
 	char trType;
-	float bankBalance = 1500.00,dipoAmount,withdraw;
+	float bankBalance,dipoAmount,withdraw;
 	
 	printf("Select the Transaction Type (Withdrawal-w/Deposit-d) :");
 	trType = getchar();
 	
-	if(trType=='w'){
+	if(trType=='w' || trType=='W' ){
 		printf("You have selected to withdraw money\n");
-		printf("Your Current Balance : %.2f\n",bankBalance);
+		printf("Your Current Balance :\n");
+		scanf("%f",&bankBalance);
 		printf("Enter Your withdrawal Amount :");
 		scanf("%f",&withdraw);
 		printf("Your Withdraw amount is : %.2f\n",withdraw);
 		printf("Your New Total Balance is : %.2f",bankBalance-withdraw);
 	}
-	else if(trType=='d'){
+	else if(trType=='d' || trType=='D'){
 		printf("You have selected to deposit money\n");
-		printf("Your Current Balance : %.2f\n",bankBalance);
+		printf("Your Current Balance :\n");
+		scanf("%f",&bankBalance);
 		printf("Enter Your Deposit :");
 		scanf("%f",&dipoAmount);
 		printf("Your New Total Balance is : %.2f",bankBalance+dipoAmount);
