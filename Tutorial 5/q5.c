@@ -1,9 +1,11 @@
 #include<stdio.h>
-
+#include<string.h>
 int main(){
 	
 	int i = 1,j=1,mark,total=0,temp=0;
 	char name[20];
+	char tempName[20];
+	
 	
 	while(j<=3){
 		
@@ -21,13 +23,14 @@ int main(){
 	     	printf(" %s Total = %d\n",name,total);
 	     	if(total>temp){
 			temp=total;
+			strcpy(tempName, name);
 			}
 	     	total=0;
 			j++;
 			i=1;
 			
 	}
-	printf("highest mark is %d",temp);
+	printf("Congratulations!!! %s your highest mark is %d",tempName,temp);
 	
     return 0;
 }
