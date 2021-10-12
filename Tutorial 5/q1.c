@@ -2,21 +2,24 @@
 
 int main(){
 	
-	int number,i=1;
+	int number,i=0;
 	float sum=0.0,avg=0.0;
-	printf("Enter %d Number : ",i);
+	int x=5;
+	x=1,2,3;
+	
+	printf("Enter Number : ");
 	scanf("%d",&number);
 	
-	
 	while(number>0){
-		sum+=number;
-		avg=sum/i;
-		printf("Enter %d Number : ",i);
-		scanf("%d",&number);
 		i++;
+		sum+=number;
+		
+		printf("Enter Number : ");
+		scanf("%d",&number);
+		
 		
 	}
 	
-	printf("%.2f %.2f",sum,avg);
+	printf("%.2f %.2f",sum,sum/i);
 	return 0;
 }

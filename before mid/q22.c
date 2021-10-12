@@ -18,9 +18,9 @@ int main(){
 	}
 	
 	printf("Enter Food Type : ");
-	scanf("%c",&foodType);
+	scanf(" %c",&foodType);
 	
-	if(foodType=='s'){
+	if(foodType=='s'||foodType=='S'){
 		printf("Snack");
 		printf("Enter Quantity :");
 		scanf("%d",&qty);
@@ -28,14 +28,14 @@ int main(){
 		bilAmount = pkgPrice+foodPrice*qty;
 		printf("Your Totaly Amount is %.2f",bilAmount);
 			
-	}else if(foodType=='d') {
+	}else if(foodType=='d'|| foodType=='D') {
 		printf("Dinner");
 		printf("Enter Quantity :");
 		scanf("%d",&qty);
 		foodPrice=3000.00;
 		bilAmount = pkgPrice+foodPrice*qty;
 		printf("Your Totaly Amount is %.2f",bilAmount);
-	}else if(foodType=='l'){
+	}else if(foodType=='l'|| foodType=='L'){
 		printf("Lunch");
 		printf("Enter Quantity :");
 		scanf("%d",&qty);
@@ -49,24 +49,7 @@ int main(){
 	
 	
 	
-	
-	
-	
-	
 
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	return 0;
 }
 	
