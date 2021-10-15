@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//elecity bill
 	int cType,unit,addtional;
 	float amount=0.0;
 	printf("Enter Type:");

@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//bank gift
 	int age;
 	float accBalance=0.0;
 	
@@ -9,7 +9,7 @@ int main(){
 	scanf("%d",&age);
 	
 	printf("Enter Account Balance : ");
-	scanf("%.2f",&accBalance);
+	scanf("%f",&accBalance);
 	
 	if(age<=18){
 		if(accBalance<=100000){

@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//virus guard
 	int proNo,noOfUsers;
 	float pricingPerUser=0.00,amount=0.00;
 	

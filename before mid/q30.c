@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//calculate basic salary
 	int noOfMonth;
 	float basicSalary=0.00,bonus=0.00;
 	

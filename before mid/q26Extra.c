@@ -1,6 +1,7 @@
 #include<stdio.h>
 int main (void)
 {
+	//television adverticeent
     int period,times;
     float amount;
     char peak;

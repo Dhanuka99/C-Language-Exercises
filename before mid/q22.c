@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//food seen
 	int persons,pkgType,qty;
 	float pkgPrice=0.0,foodPrice = 0.0,bilAmount=0.0;
 	char foodType;

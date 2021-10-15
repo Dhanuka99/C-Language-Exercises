@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//television adv
 	int timePeriod,noOfTime;
 	float adAmount=0.0,amount=0.0;
 	char peakTime;

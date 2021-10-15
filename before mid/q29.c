@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//customer discount
 	int cType;
 	float amount,discount,finalBill;
 	

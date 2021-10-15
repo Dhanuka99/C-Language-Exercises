@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//pay sales commissions
 	int noOfYear,noOfUnit;
 	float commissionPerUnit,commission;
 	

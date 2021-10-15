@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//customer seen
 	char itemCode,customerType;
 	float itemPrice=0.0,totalAmout=0.0,discount=0.0;
 	int qty;

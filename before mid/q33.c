@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//course discount
 	int courseNo,marks;
 	float courseFee=0.00,discount=0.00;
 	

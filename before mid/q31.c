@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-	
+	//library
 	int bookType,days;
 	float amount=0.00;
 	
