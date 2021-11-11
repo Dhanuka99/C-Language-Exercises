@@ -1,19 +1,22 @@
 #include<stdio.h>
-
-int calculateArea(int,int);//Decl
+float circleArea(int);//function prototype
 int main(){
+	int number;
+	//user input
+	printf("Enter Integer value : ");
+	scanf("%d",&number);
+	//call the function
+	float x = circleArea(number);
+	printf("Circle Area is %.2f",x);
 	
-	int a = 10,b=5;
-	int area;
-	area = calculateArea(a,b);
-	printf("%d",area);
-	
-	
-	
-	return 0;
 }
 
-int calculateArea(int a,int b){
-	int area = a*b;
+//create function 
+float circleArea(int x){
+	//x = radius
+	float area = 3.14*x*x;
 	return area;
 }
+
+
+
