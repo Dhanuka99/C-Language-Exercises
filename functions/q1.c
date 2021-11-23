@@ -1,22 +1,39 @@
 #include<stdio.h>
-float circleArea(int);//function prototype
+
+float calAdditionalCharges(int,float);
+float calTotalBill(float,float);
+
 int main(){
-	int number;
-	//user input
-	printf("Enter Integer value : ");
-	scanf("%d",&number);
-	//call the function
-	float x = circleArea(number);
-	printf("Circle Area is %.2f",x);
+	float subTotal=0.00;
+	int orderType;
 	
+	
+	printf("Enter SubTotal : ");
+	scanf("%f",&subTotal);
+	
+	printf("Enter Order Type : ");
+	scanf("%d",&orderType);
+	float additionalCharges = calAdditionalCharges(orderType,subTotal);
+	float finalBill = calTotalBill(subTotal,additionalCharges);
+	printf("Total Bill Amount %.2f",finalBill);
+	
+	return 0;
 }
 
-//create function 
-float circleArea(int x){
-	//x = radius
-	float area = 3.14*x*x;
-	return area;
+float calAdditionalCharges(int orderType,float subTotal){
+	float additionalCharges;
+	if(orderType==1){
+		return (subTotal*0.22);
+	}else if(orderType==2){
+		return (subTotal*0.12);
+	}else if (orderType==3){
+		return (subTotal*0.17);
+	}else {
+		return 0;
+	}
 }
 
-
+float calTotalBill(float subTotal,float charges){
+	return subTotal+charges;
+}
 

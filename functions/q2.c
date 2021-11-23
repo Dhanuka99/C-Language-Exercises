@@ -1,23 +1,39 @@
 #include<stdio.h>
-float calPayment(int,int);
+
+float calAdditionalCharges(int,float);
+float calTotalBill(float,float);
+
 int main(){
-	int iCode,qty;
-	float payment=0.00;
-	printf("Enter Item Code : ");
-	scanf("%d",&iCode);
-	printf("Enter Item Qyantity : ");
-	scanf("%d",&qty);
-	payment = calPayment(iCode,qty);
-	printf("Payment is %.2f",payment);
+	float subTotal=0.00;
+	int orderType;
+	
+	
+	printf("Enter SubTotal : ");
+	scanf("%f",&subTotal);
+	
+	printf("Enter Order Type : ");
+	scanf("%d",&orderType);
+	float additionalCharges = calAdditionalCharges(orderType,subTotal);
+	float finalBill = calTotalBill(subTotal,additionalCharges);
+	printf("Total Bill Amount %.2f",finalBill);
+	
 	return 0;
 }
 
-float calPayment(int itemCode,int quantity){
-	
-	if(itemCode==1){
-		return  quantity*50.00;
-	}else if(itemCode==2){
-		return  quantity*100.00;
+float calAdditionalCharges(int orderType,float subTotal){
+	float additionalCharges;
+	if(orderType==1){
+		return (subTotal*0.25);
+	}else if(orderType==2){
+		return (subTotal*0.15);
+	}else if (orderType==3){
+		return (subTotal*0.20);
+	}else {
+		return 0;
 	}
-	return 0;
 }
+
+float calTotalBill(float subTotal,float charges){
+	return subTotal+charges;
+}
+
