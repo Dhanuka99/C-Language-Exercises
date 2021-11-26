@@ -4,7 +4,7 @@ float calPaymentSalary(float,float);
 int main(){
 	
 	float salary;
-	int years;
+	int years
 	
 	printf("Enter Salary : ");
 	scanf("%f",&salary);
