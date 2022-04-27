@@ -1,0 +1,8 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(496,5): warning MSB8003: The WindowsSDKDir property is not defined. Some build tools may not be found.
+  Book.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.31.31103\include\yvals.h(12,10): fatal error C1083: Cannot open include file: 'crtdbg.h': No such file or directory
+  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.31.31103\include\yvals.h(12,10): fatal error C1083: Cannot open include file: 'crtdbg.h': No such file or directory
+  quize1.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.31.31103\include\yvals.h(12,10): fatal error C1083: Cannot open include file: 'crtdbg.h': No such file or directory
+  Generating Code...
