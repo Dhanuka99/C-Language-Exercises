@@ -1,3 +1,7 @@
 class Vehicle{
 	
 };
+
+class Vehicle{
+	
+};
